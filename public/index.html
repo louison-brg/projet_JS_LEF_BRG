@@ -6,13 +6,16 @@
 </head>
 <body>
 <h1>Pokédex</h1>
+
 <input type="text" id="searchInput" placeholder="Entrez le nom du Pokémon">
 <button id="searchButton">Chercher</button>
-<div id="pokemonDisplay"></div>
+<div id="pokemonDisplay">
+    <img id="pokemonImage" src="" alt="Image of Pokémon">
+</div>
 
-<script type="module">
-    import * as R from 'https://cdn.jsdelivr.net/npm/ramda@0.27.1/dist/ramda.min.js';
-</script>
+
+<script src="https://cdn.jsdelivr.net/npm/ramda@0.28.0/dist/ramda.min.js"></script>
+
 <script type="module" src="app.js"></script>
 </body>
 </html>
