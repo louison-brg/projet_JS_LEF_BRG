@@ -6,6 +6,16 @@ const PORT = 3000;
 // Sert les fichiers statiques du dossier 'public'
 app.use(express.static('public'));
 
+app.use((req, res, next) => {
+    if (req.path.endsWith('.css')) {
+        res.type('text/css');
+    }
+    next();
+});
+
+app.use(express.static('public'));
+
+
 // Route principale
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));

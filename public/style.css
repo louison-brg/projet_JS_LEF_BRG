@@ -1,0 +1,71 @@
+/* Réinitialisation de quelques styles par défaut pour assurer la cohérence entre les navigateurs */
+body, h1, p, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Police sobre */
+    background-color: #f0f0f0; /* Couleur de fond légère */
+    color: #333; /* Couleur de texte foncée pour un bon contraste */
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #cc0000; /* Couleur rouge Pokémon pour les titres */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px; /* Bordures arrondies pour l'input */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Ombre légère pour un effet en relief */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ee1515; /* Rouge Pokémon */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition douce au survol */
+}
+
+button:hover {
+    background-color: #d10000; /* Un rouge légèrement plus foncé au survol */
+}
+
+#pokemonDisplay {
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre pour donner de la profondeur */
+    padding: 20px;
+}
+
+img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas son conteneur */
+    height: auto;
+    border-radius: 5px; /* Bordures arrondies pour les images */
+}
+
+#pokemonInfo {
+    margin-top: 10px;
+}
+
+#pokemonInfo h2 {
+    font-size: 24px; /* Taille de police pour le nom du Pokémon */
+}
+
+#pokemonInfo p {
+    font-size: 16px;
+    line-height: 1.5; /* Espacement des lignes pour une meilleure lisibilité */
+    margin-top: 5px;
+}
